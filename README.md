@@ -2,14 +2,16 @@
 
 #install 
 
-unzip gene_fusion_normalizer_0.2.1
-cd gene_fusion_normalizer
-pip install -e .
+unzip gene_fusion_normalizer_0.2.1 \
+cd gene_fusion_normalizer \
+pip install -e . \
+
+
 
 #run --col 입력 없으면 자동으로 fusion col 인식
 
   gene-fusion-normalizer "/path/gene_fusion_normalizer/gene_split_test.xlsx" \
-  #--col "fusion" \
+  --col "fusion" \
   --gtf "/path/Homo_sapiens.GRCh38.110.gtf.gz" \
   --hgnc "/path/hgnc_complete_set.txt" \
   --explode \
